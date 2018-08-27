@@ -20,7 +20,8 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/core/colors/palette-switch.min.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/vendors/css/charts/chartist.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/vendors/css/charts/chartist-plugin-tooltip.css">
-    <!-- END VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/vendors/css/tables/datatable/datatables.min.css">
+	<!-- END VENDOR CSS-->
     <!-- BEGIN CHAMELEON  CSS-->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/app.min.css">
     <!-- END CHAMELEON  CSS-->

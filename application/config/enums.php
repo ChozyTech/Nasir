@@ -7,12 +7,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $config['app_name']	= 'Program Keluarga Harapan';
 $config['owner_name'] = 'Muhammad Nasir';
 $config['year'] = '2018';
+$config['college'] = 'Institut Teknologi Adhi Tama Surabaya';
 
     /*******************************************
     *                Page List                 *
     *******************************************/
 $config['Login']	= 'Login';
 $config['Dashboard']	= 'Dashboard';
+$config['MasterUser']	= 'Master User';
 $config['Data']	= 'Data Keluarga';
 $config['LaporanPenerimaBantuan']	= 'Laporan Penerima Bantuan';
 $config['Error404']	= 'Page Not Found';

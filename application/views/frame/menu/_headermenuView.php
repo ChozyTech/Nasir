@@ -21,8 +21,8 @@
               <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown"><span class="avatar avatar-online"><img src="assets/images/portrait/small/default-avatar.png" alt="avatar"></span></a>
                 <div class="dropdown-menu dropdown-menu-right">
                   <div class="arrow_box_right"><a class="dropdown-item" href="#"><span class="avatar avatar-online"><img src="assets/images/portrait/small/default-avatar.png" alt="avatar"><span class="user-name text-bold-700 ml-1"><?php echo ucfirst($this->session->userdata('username')); ?></span></span></a>
-                    <div class="dropdown-divider"></div><center> Lv: Administrator</center>
-					<div class="dropdown-divider"></div><a class="dropdown-item" href="user-profile.html"><i class="ft-user"></i> Edit Profile</a>
+                    <div class="dropdown-divider"></div><center> Lv: <?php echo ucfirst($this->session->userdata('namalevel')); ?></center>
+					<div class="dropdown-divider"></div><a class="dropdown-item" href="<?php echo base_url(); ?>changepassword"><i class="ft-user"></i> Changepassword</a>
                     <div class="dropdown-divider"></div><a class="dropdown-item" href="<?php echo base_url(); ?>authentication/logout"><i class="ft-power"></i> Logout</a>
                   </div>
                 </div>
@@ -39,14 +39,14 @@
     <div class="header-navbar navbar-expand-sm navbar navbar-horizontal navbar-fixed navbar-dark navbar-without-dd-arrow navbar-shadow" role="navigation" data-menu="menu-wrapper">
       <div class="navbar-container main-menu-content" data-menu="menu-container">
         <ul class="nav navbar-nav main-menu-navigation" id="main-menu-navigation" data-menu="menu-navigation">
-          <li class="dropdown nav-item" ><a class="dropdown-toggle nav-link" href="index-2.html"><i class="ft-home"></i><span>Beranda</span></a>
+          <li ><a class="dropdown-toggle nav-link" href="<?=base_url();?>"><i class="ft-home"></i><span>Beranda</span></a>
           </li>
-          <li class="dropdown nav-item" data-menu="dropdown"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown"><i class="ft-layers"></i><span>Master</span></a>
+          <li class="dropdown nav-item" data-menu="dropdown"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown"><i class="ft-layers"></i><span>Master Data</span></a>
             <ul class="dropdown-menu">
               <div class="arrow_box">
-                <li data-menu=""><a class="dropdown-item" href="email-application.html" data-toggle="dropdown">Master Kriteria</a>
+                <li data-menu=""><a class="dropdown-item" href="<?=base_url();?>masterkriteria" data-toggle="dropdown">Master Kriteria</a>
                 </li>
-                <li data-menu=""><a class="dropdown-item" href="chat-application.html" data-toggle="dropdown">Master User</a>
+                <li data-menu=""><a class="dropdown-item" href="<?=base_url();?>masteruser" data-toggle="dropdown">Master User</a>
                 </li>
               </div>
             </ul>
@@ -54,7 +54,7 @@
           <li class="dropdown nav-item" data-menu="dropdown"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown"><i class="ft-monitor"></i><span>Data</span></a>
             <ul class="dropdown-menu">
               <div class="arrow_box">
-                <li data-menu=""><a class="dropdown-item" href="email-application.html" data-toggle="dropdown">Input Data</a>
+                <li data-menu=""><a class="dropdown-item" href="<?=base_url();?>data" data-toggle="dropdown">Input Data Peserta PKH</a>
                 </li>
               </div>
             </ul>
@@ -62,8 +62,9 @@
           <li class="dropdown nav-item" data-menu="dropdown"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown"><i class="ft-layout"></i><span>Laporan</span></a>
 			<ul class="dropdown-menu">
               <div class="arrow_box">
-                <li data-menu=""><a class="dropdown-item" href="email-application.html" data-toggle="dropdown">Laporan Penerima Bantuan</a>
-                </li>
+                <li data-menu=""><a class="dropdown-item" href="<?=base_url();?>laporanspk" data-toggle="dropdown">SPK Perhitungan Topsis</a>
+                <li data-menu=""><a class="dropdown-item" href="<?=base_url();?>laporanbantuan" data-toggle="dropdown">Laporan Penerima Bantuan</a>
+				</li>
               </div>
             </ul>
           </li>

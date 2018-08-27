@@ -14,15 +14,15 @@ class Authentication extends CI_Controller {
     
         if($this->session->userdata('logged_in')) {
 			$this->session->set_userdata('messages_alert', '');
-            redirect(base_url("Home"));
+            redirect(base_url("home"));
         }else {
             $data = array(
 			'alert' => false
 			);
 		$this->session->set_userdata('page', $this->config->item('Login'));
-		$this->load->view('Frame/_HeaderView');
+		$this->load->view('frame/_headerView');
 		$this->load->view('Login/LoginView',$data);
-		$this->load->view('Frame/_FooterView');
+		$this->load->view('frame/_footerView');
 
         }
     }
@@ -35,24 +35,21 @@ class Authentication extends CI_Controller {
                 'iduser'  => $validate[0]->iduser,
 				'username'  => $validate[0]->username,
 				'nama'  => $validate[0]->nama,
-				'idlevel'  => $validate[0]->idlevel,
-				'kodelevel'  => $validate[0]->kodelevel,
-				'namalevel'  => $validate[0]->namalevel,
                 'logged_in' => TRUE,
 				'messages_alert' => $this->config->item('Welcome') . $validate[0]->username . ' !',
             );
             $this->session->set_userdata($data);
 			$this->session->set_userdata('page', $this->config->item('Dashboard'));
-            redirect(base_url('Home')); 
+            redirect(base_url('home')); 
         }
         else{
             $data = array(
 			'alert' => TRUE
 			);
 		$this->session->set_userdata('page', $this->config->item('Login'));
-		$this->load->view('Frame/_HeaderView');
+		$this->load->view('frame/_headerView');
 		$this->load->view('Login/LoginView',$data);
-		$this->load->view('Frame/_FooterView');
+		$this->load->view('frame/_footerView');
         }
      
     }
