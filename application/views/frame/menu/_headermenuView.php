@@ -18,9 +18,9 @@
               <li class="nav-item d-none d-md-block"><a class="nav-link nav-link-expand" href="#"><i class="ficon ft-maximize"></i></a></li>
               </ul>
             <ul class="nav navbar-nav float-right">         
-              <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown"><span class="avatar avatar-online"><img src="assets/images/portrait/small/default-avatar.png" alt="avatar"></span></a>
+              <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown"><span class="avatar avatar-online"><img src="<?php echo base_url(); ?>assets/images/portrait/small/default-avatar.png" alt="avatar"></span></a>
                 <div class="dropdown-menu dropdown-menu-right">
-                  <div class="arrow_box_right"><a class="dropdown-item" href="#"><span class="avatar avatar-online"><img src="assets/images/portrait/small/default-avatar.png" alt="avatar"><span class="user-name text-bold-700 ml-1"><?php echo ucfirst($this->session->userdata('username')); ?></span></span></a>
+                  <div class="arrow_box_right"><a class="dropdown-item" href="#"><span class="avatar avatar-online"><img src="<?php echo base_url(); ?>assets/images/portrait/small/default-avatar.png" alt="avatar"><span class="user-name text-bold-700 ml-1"><?php echo ucfirst($this->session->userdata('username')); ?></span></span></a>
                     <div class="dropdown-divider"></div><center> Lv: <?php echo ucfirst($this->session->userdata('namalevel')); ?></center>
 					<div class="dropdown-divider"></div><a class="dropdown-item" href="<?php echo base_url(); ?>changepassword"><i class="ft-user"></i> Changepassword</a>
                     <div class="dropdown-divider"></div><a class="dropdown-item" href="<?php echo base_url(); ?>authentication/logout"><i class="ft-power"></i> Logout</a>

@@ -21,6 +21,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/vendors/css/charts/chartist.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/vendors/css/charts/chartist-plugin-tooltip.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/vendors/css/tables/datatable/datatables.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/vendors/css/extensions/toastr.css">
 	<!-- END VENDOR CSS-->
     <!-- BEGIN CHAMELEON  CSS-->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/app.min.css">
@@ -28,9 +29,11 @@
     <!-- BEGIN Page Level CSS-->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/core/menu/menu-types/horizontal-menu.min.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/core/colors/palette-gradient.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/plugins/animate/animate.min.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/pages/chat-application.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/pages/dashboard-analytics.min.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/pages/login-register.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/plugins/extensions/toastr.min.css">
     <!-- END Page Level CSS-->
     <!-- BEGIN Custom CSS-->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/style.css">

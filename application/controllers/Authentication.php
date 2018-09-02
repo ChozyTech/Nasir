@@ -14,6 +14,7 @@ class Authentication extends CI_Controller {
     
         if($this->session->userdata('logged_in')) {
 			$this->session->set_userdata('messages_alert', '');
+			$this->session->set_userdata('alert_type', '');
             redirect(base_url("Home"));
         }else {
             $data = array(
@@ -40,6 +41,7 @@ class Authentication extends CI_Controller {
 				'namalevel'  => $validate[0]->namalevel,
                 'logged_in' => TRUE,
 				'messages_alert' => $this->config->item('Welcome') . $validate[0]->username . ' !',
+				'alert_type' => $this->config->item('Success'),
             );
             $this->session->set_userdata($data);
 			$this->session->set_userdata('page', $this->config->item('Dashboard'));

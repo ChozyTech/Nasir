@@ -29,12 +29,11 @@ class MasterUserModels extends CI_Model {
 	function Insert($postData){
 		$data = array(
         'username'=>$postData['username'],
-        'password'=>md5($postData['password']),
+        'password'=>md5($postData['username']),
 		'nama'=>$postData['nama'],
 		'alamat'=>$postData['alamat'],
 		'email'=>$postData['email'],
 		'nohp'=>$postData['nohp'],
-		'kota'=>$postData['kota'],
 		'idlevel'=>$postData['level'],
 		'isactive'=>$postData['aktif'],
 		'isdelete'=>'0',
@@ -58,12 +57,11 @@ class MasterUserModels extends CI_Model {
 		'alamat'=>$postData['alamat'],
 		'email'=>$postData['email'],
 		'nohp'=>$postData['nohp'],
-		'kota'=>$postData['kota'],
 		'idlevel'=>$postData['level'],
 		'isactive'=>$postData['aktif'],
 		'modifiedby'=>$this->session->userdata('iduser'),
 		'keterangan'=>$postData['keterangan']
-    );
+		);
 	
 		$result = $this->config->item('Failed');
 		$this->db->set('modifieddate', 'NOW()', FALSE);

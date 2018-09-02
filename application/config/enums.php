@@ -15,6 +15,7 @@ $config['college'] = 'Institut Teknologi Adhi Tama Surabaya';
 $config['Login']	= 'Login';
 $config['Dashboard']	= 'Dashboard';
 $config['MasterUser']	= 'Master User';
+$config['MasterKriteria']	= 'Master Kriteria';
 $config['Data']	= 'Data Keluarga';
 $config['LaporanPenerimaBantuan']	= 'Laporan Penerima Bantuan';
 $config['Error404']	= 'Page Not Found';
@@ -25,13 +26,17 @@ $config['ChangePW']	= 'Change Password';
     *                Table List                *
     *******************************************/
 $config['tbdata']	= 'tbdata';
+$config['tbdatadetail']	= 'tbdatadetail';
 $config['tbuser']	= 'tbuser';
+$config['tbkriteria']	= 'tbkriteria';
 
     /*******************************************
     *                View List                *
     *******************************************/
 $config['viewlistuser']	= 'viewlistuser';
 $config['viewlistdata']	= 'viewlistdata';
+$config['viewlistlevel']	= 'viewlistlevel';
+$config['viewlistkriteria']	= 'viewlistkriteria';
 
     /*******************************************
     *                 Status                   *

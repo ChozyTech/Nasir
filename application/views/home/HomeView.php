@@ -23,6 +23,11 @@
                     </div>
                 </div>
             </div>
+			<div class="col-xl-3 col-md-6 col-sm-12">
+                        <h5>Close Button</h5>
+                        <p>Close this notification clicking on close button.</p>
+                        <button type="button" class="btn btn-lg btn-block btn-primary mb-2" id="close-button">Show Toast</button>
+                    </div>
         </div>
     </div>
     <div class="col-lg-4 col-md-12">

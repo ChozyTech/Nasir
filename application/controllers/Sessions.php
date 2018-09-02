@@ -15,7 +15,7 @@ class Sessions extends CI_Controller {
 		redirect(base_url());
     }
 	
-	 public function GetSessions()
+	public function GetSessions()
     {
         $Data = array(
                 'iduser'  => $this->session->userdata('iduser'),
@@ -26,9 +26,16 @@ class Sessions extends CI_Controller {
 				'namalevel'  => $this->session->userdata('namalevel'),
                 'logged_in' => $this->session->userdata('logged_in'),
 				'page' => $this->session->userdata('page'),
-				'messages_alert' => $this->session->userdata('messages_alert')
+				'messages_alert' => $this->session->userdata('messages_alert'),
+				'alert_type' => $this->config->item('Success')
             );
         echo json_encode($Data);
+    }
+	
+	public function clearalert()
+    {
+       $this->session->set_userdata('messages_alert', '');
+	   $this->session->set_userdata('alert_type', '');
     }
 	
 }
