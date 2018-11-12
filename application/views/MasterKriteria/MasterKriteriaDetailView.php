@@ -3,7 +3,7 @@
    <div class="content-wrapper-before"></div>
    <div class="content-header row">
       <div class="content-header-left col-md-4 col-12 mb-2">
-         <h3 class="content-header-title">Edit Kriteria</h3>
+         <h3 class="content-header-title">Detail Kriteria</h3>
       </div>
       <div class="content-header-right col-md-8 col-12">
          <div class="breadcrumbs-top float-md-right">
@@ -15,7 +15,7 @@
                   </li>
 				  <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>masterkriteria">Master Kriteria</a>
                   </li>
-                  <li class="breadcrumb-item active">Edit
+                  <li class="breadcrumb-item active">Detail
                   </li>
                </ol>
             </div>
@@ -32,7 +32,7 @@
 	            </div>
 	            <div class="card-content collpase show">
 	                <div class="card-body">
-	                    <form class="form form-horizontal" id="editkriteriaform" name="editkriteriaform" role="form" method="post" action="<?php echo base_url(); ?>masterkriteria/update">
+	                    <form class="form form-horizontal" id="detailkriteriaform" name="detailkriteriaform" role="form" method="post" action="<?php echo base_url(); ?>masterkriteria/update">
 	                    	<div class="form-body">
 	                    		<h4 class="form-section"><i class="ft-eye"></i>Kriteria Details</h4>
 								<input id="idkriteria" name="idkriteria" type="hidden" value="<?php echo $DataKriteria['Id']; ?>"/>
@@ -55,6 +55,14 @@
 			                        </div>
 		                        </div>
 		                        <div class="row">
+								<div class="col-md-6">
+				                        <div class="form-group row">
+				                        	<label class="col-md-3 label-control" for="bobot">Bobot</label>
+				                        	<div class="col-md-9">
+				                            	<input type="text" id="bobot" name="bobot" class="form-control border-primary" placeholder="Bobot" value="<?php echo $DataKriteria['Bobot']; ?>" disabled />
+				                            </div>
+				                        </div>
+				                    </div>
 		                        	<div class="col-md-6">
 		                        		<div class="form-group row">
 				                        	<label class="col-md-3 label-control" for="keterangan">Keterangan</label>

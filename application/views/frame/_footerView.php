@@ -19,6 +19,14 @@
 		<script src="<?php echo base_url(); ?>assets/js/toast/mymessages.js" type="text/javascript"></script>
 	<!-- Validation Javascript -->
 		<script src="<?php echo base_url(); ?>assets/js/validation/masteruserval.js" type="text/javascript"></script>
+		<script src="<?php echo base_url(); ?>assets/js/validation/masterkriteriaval.js" type="text/javascript"></script>
+	<!-- Form Javascript -->
+		<script src="<?php echo base_url(); ?>assets/js/forms/jquery.steps.min.js" type="text/javascript"></script>
+		<script src="<?php echo base_url(); ?>assets/js/forms/moment-with-locales.min.js" type="text/javascript"></script>
+		<script src="<?php echo base_url(); ?>assets/js/forms/daterangepicker.js" type="text/javascript"></script>
+		<script src="<?php echo base_url(); ?>assets/js/forms/jquery.validate.min.js" type="text/javascript"></script>
+		<script src="<?php echo base_url(); ?>assets/js/forms/wizard-steps.min.js" type="text/javascript"></script>
 <!-- Javascript Section End -->
-	</body>
+
+  </body>
 </html>

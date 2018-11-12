@@ -17,6 +17,7 @@ $config['Dashboard']	= 'Dashboard';
 $config['MasterUser']	= 'Master User';
 $config['MasterKriteria']	= 'Master Kriteria';
 $config['Data']	= 'Data Keluarga';
+$config['LaporanSPK']	= 'Laporan SPK Perhitungan Topsis';
 $config['LaporanPenerimaBantuan']	= 'Laporan Penerima Bantuan';
 $config['Error404']	= 'Page Not Found';
 $config['ChangePW']	= 'Change Password';
@@ -35,8 +36,17 @@ $config['tbkriteria']	= 'tbkriteria';
     *******************************************/
 $config['viewlistuser']	= 'viewlistuser';
 $config['viewlistdata']	= 'viewlistdata';
+$config['viewlistdatadetail']	= 'viewlistdatadetail';
 $config['viewlistlevel']	= 'viewlistlevel';
 $config['viewlistkriteria']	= 'viewlistkriteria';
+$config['viewrangekriteria']	= 'viewrangekriteria';
+$config['viewlistreportdata']	= 'viewlistreportdata';
+
+
+    /*******************************************
+    *             Function List                *
+    *******************************************/
+$config['calcx']	= 'calcX';
 
     /*******************************************
     *                 Status                   *

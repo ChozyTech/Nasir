@@ -30,6 +30,7 @@ class MasterKriteriaModels extends CI_Model {
 		$data = array(
         'kodekriteria'=>$postData['kodekriteria'],
         'namakriteria'=>$postData['namakriteria'],
+		'bobot'=>$postData['bobot'],
 		'sangatmampu'=>$postData['sangatmampu'],
 		'cukupmampu'=>$postData['cukupmampu'],
 		'tidakmampu'=>$postData['tidakmampu'],
@@ -55,6 +56,7 @@ class MasterKriteriaModels extends CI_Model {
 		$isnumerical = is_numeric($postData['sangattidakmampu']);
 		$data = array(
 		'namakriteria'=>$postData['namakriteria'],
+		'bobot'=>$postData['bobot'],
 		'sangatmampu'=>$postData['sangatmampu'],
 		'cukupmampu'=>$postData['cukupmampu'],
 		'tidakmampu'=>$postData['tidakmampu'],
@@ -87,19 +89,6 @@ class MasterKriteriaModels extends CI_Model {
             return $result;
     }
 	
-	function IsExist($username){
-		$this->db->select('*');
-        $this->db->from($this->config->item('viewlistkriteria'));
-		$this->db->where('username', $username);
-        $query=$this->db->get();
-        if ($query->num_rows() > 0){
-            return true;
-		}
-        else{
-            return false;
-		}
-    }
-	
 	function GetMax(){
         $this->db->select('MAX(idkriteria)+1 AS MAXID');
         $this->db->from($this->config->item('tbkriteria'));
@@ -119,6 +108,31 @@ class MasterKriteriaModels extends CI_Model {
         else{
             return false;
 		}
+    }
+	
+	function IsExist($kode){
+		$this->db->select('*');
+        $this->db->from($this->config->item('viewlistkriteria'));
+		$this->db->where('kodekriteria', $kode);
+        $query=$this->db->get();
+        if ($query->num_rows() > 0){
+            return true;
+		}
+        else{
+            return false;
+		}
+    }
+    
+    function GetNilaiKriteria($idKriteria, $nilai){
+        $this->db->select('*');
+        $this->db->from($this->config->item('viewrangekriteria'));
+        $this->db->where('idkriteria', $idKriteria);
+        $this->db->where('kemampuan <=', $nilai);
+        $this->db->order_by("kemampuan", "desc");
+        $this->db->limit(1);
+        $query = $this->db->get();
+		$result = $query->row();
+        return $result->alias;
     }
 }
 

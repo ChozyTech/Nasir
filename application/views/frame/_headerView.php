@@ -22,6 +22,11 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/vendors/css/charts/chartist-plugin-tooltip.css">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/vendors/css/tables/datatable/datatables.min.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/vendors/css/extensions/toastr.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/vendors/css/pickers/daterange/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/core/menu/menu-types/horizontal-menu.min.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/core/colors/palette-gradient.min.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/plugins/forms/wizard.min.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/plugins/pickers/daterange/daterange.min.css">
 	<!-- END VENDOR CSS-->
     <!-- BEGIN CHAMELEON  CSS-->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/app.min.css">

@@ -105,6 +105,7 @@ class MasterKriteria extends CI_Controller {
 			'Id'  => $ListKriteria[0]->idkriteria,
 			'Kode'  => $ListKriteria[0]->kodekriteria,
 			'Nama'  => $ListKriteria[0]->namakriteria,
+			'Bobot'  => $ListKriteria[0]->bobot,
 			'SangatMampu'  => $ListKriteria[0]->sangatmampu,
 			'CukupMampu'  => $ListKriteria[0]->cukupmampu,
 			'TidakMampu'  => $ListKriteria[0]->tidakmampu,
@@ -130,6 +131,7 @@ class MasterKriteria extends CI_Controller {
 			'Id'  => $ListKriteria[0]->idkriteria,
 			'Kode'  => $ListKriteria[0]->kodekriteria,
 			'Nama'  => $ListKriteria[0]->namakriteria,
+			'Bobot'  => $ListKriteria[0]->bobot,
 			'SangatMampu'  => $ListKriteria[0]->sangatmampu,
 			'CukupMampu'  => $ListKriteria[0]->cukupmampu,
 			'TidakMampu'  => $ListKriteria[0]->tidakmampu,
@@ -146,6 +148,18 @@ class MasterKriteria extends CI_Controller {
 		$this->load->view('MasterKriteria/MasterKriteriaDetailView', $Data);
 		$this->load->view('Frame/Menu/_FootermenuView');
 		$this->load->view('Frame/_FooterView');
+	}
+	
+	public function CheckExists()
+	{   
+		$kode = $_POST['kodekriteria'];
+		$result =  $this->MasterKriteriaModels->IsExist($kode);
+		if($result){
+			echo $this->config->item('Failed');
+		}
+		else{
+			echo $this->config->item('Success');
+		}
 	}
 	
 }

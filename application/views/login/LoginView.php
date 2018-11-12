@@ -22,7 +22,9 @@
                      <div class="card border-grey border-lighten-3 px-1 py-1 m-0">
                         <div class="card-header border-0">
                            <div class="text-center mb-1">
-                              <img src="<?php echo base_url(); ?>assets/images/logo/logo.png" alt="Program Keluarga Harapan" style="width:200px;height:114px;">
+                              <!--<img src="<?php echo base_url(); ?>assets/images/logo/logo.png" alt="Program Keluarga Harapan" style="width:200px;height:114px;">-->
+                           <br/><h3><strong>Sistem Pendukung Keputusan</strong></h3>
+                           <h3><strong>Program Keluarga Harapan</strong></h3>
                            </div>
                         </div>
                         <div class="card-content">

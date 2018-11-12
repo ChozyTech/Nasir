@@ -32,7 +32,7 @@
 	            </div>
 	            <div class="card-content collpase show">
 	                <div class="card-body">
-	                    <form class="form form-horizontal" id="editkriteriaform" name="editkriteriaform" role="form" method="post" action="<?php echo base_url(); ?>masterkriteria/insert">
+	                    <form class="form form-horizontal" id="addkriteriaform" name="addkriteriaform" role="form" method="post" action="<?php echo base_url(); ?>masterkriteria/insert">
 	                    	<div class="form-body">
 	                    		<h4 class="form-section"><i class="ft-eye"></i>Kriteria Details</h4>
 	                    		<div class="row">
@@ -54,6 +54,14 @@
 			                        </div>
 		                        </div>
 		                        <div class="row">
+									<div class="col-md-6">
+				                        <div class="form-group row">
+				                        	<label class="col-md-3 label-control" for="bobot">Bobot</label>
+				                        	<div class="col-md-9">
+				                            	<input type="text" id="bobot" name="bobot" class="form-control border-primary" placeholder="Bobot" required />
+				                            </div>
+				                        </div>
+				                    </div>
 		                        	<div class="col-md-6">
 		                        		<div class="form-group row">
 				                        	<label class="col-md-3 label-control" for="keterangan">Keterangan</label>

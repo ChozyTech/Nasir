@@ -41,7 +41,7 @@
         <ul class="nav navbar-nav main-menu-navigation" id="main-menu-navigation" data-menu="menu-navigation">
           <li ><a class="dropdown-toggle nav-link" href="<?=base_url();?>"><i class="ft-home"></i><span>Beranda</span></a>
           </li>
-          <li class="dropdown nav-item" data-menu="dropdown"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown"><i class="ft-layers"></i><span>Master Data</span></a>
+          <li class="dropdown" data-menu="dropdown"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown"><i class="ft-layers"></i><span>Master Data</span></a>
             <ul class="dropdown-menu">
               <div class="arrow_box">
                 <li data-menu=""><a class="dropdown-item" href="<?=base_url();?>masterkriteria" data-toggle="dropdown">Master Kriteria</a>
@@ -51,7 +51,7 @@
               </div>
             </ul>
           </li>
-          <li class="dropdown nav-item" data-menu="dropdown"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown"><i class="ft-monitor"></i><span>Data</span></a>
+          <li class="dropdown" data-menu="dropdown"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown"><i class="ft-monitor"></i><span>Data</span></a>
             <ul class="dropdown-menu">
               <div class="arrow_box">
                 <li data-menu=""><a class="dropdown-item" href="<?=base_url();?>data" data-toggle="dropdown">Input Data Peserta PKH</a>
@@ -59,7 +59,7 @@
               </div>
             </ul>
           </li>
-          <li class="dropdown nav-item" data-menu="dropdown"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown"><i class="ft-layout"></i><span>Laporan</span></a>
+          <li class="dropdown" data-menu="dropdown"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown"><i class="ft-layout"></i><span>Laporan</span></a>
 			<ul class="dropdown-menu">
               <div class="arrow_box">
                 <li data-menu=""><a class="dropdown-item" href="<?=base_url();?>laporanspk" data-toggle="dropdown">SPK Perhitungan Topsis</a>
