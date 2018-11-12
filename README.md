@@ -24,5 +24,12 @@ Feature On 02/09/2018:
 - Master User
 - Master Kriteria
 
+Feature On 12/11/2018:
+- Login
+- Master User
+- Master Kriteria
+- Input Data
+- Laporan Perhitungan SPK Topsis
+
 
 
